@@ -1,0 +1,120 @@
+@keyframes fundo {
+    /*  0% { 
+        background-image: url('https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif'); 
+        background-size: cover;
+    }
+    50% { 
+        background-image: url('https://media2.giphy.com/media/Z5xk7fGO5FjjTElnpT/giphy.gif');
+        background-size:cover; 
+    }
+    100% { 
+        background-image: url('https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif'); 
+        background-size: cover;
+    }
+*/
+
+    0% {
+        background-color: aqua;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: aqua;
+    }
+}
+
+body{
+    animation-name:fundo;
+    animation-duration:15s;
+    animation-iteration-count:infinite;    
+}
+.Simples {
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (min-device-width: 1921px) {
+    .Simples {
+        background-color: green;
+    }
+
+    h2::before {
+        content: "verde";
+        color: pink;
+    }
+}
+
+@media screen and (min-device-width: 1367px) and (max-device-width: 1920px) {
+    .Simples {
+        background-color: yellow;
+    }
+
+    h2::before {
+        content: "amarelo";
+        color: purple;
+    }
+}
+
+/* 700px ou menor */
+@media screen and (min-width: 1081px) and (max-device-width: 1366px) {
+    .Simples {
+        background-color: blue;
+    }
+
+    h2::before {
+        content: "azul";
+        color: orange;
+    }
+}
+
+/* 480px ou menor */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1080px) {
+    .Simples {
+        background-color: red;
+    }
+
+    h2::before {
+        content: "vermelho";
+        color: green;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    .Simples {
+        background-color: pink;
+    }
+
+    h2::before {
+        content: "rosa";
+        color: green;
+    }
+}
+
+@media screen and (min-device-width: 421px) and (max-device-width: 768px) {
+    .Simples {
+        background-color: orange;
+    }
+
+    h2::before {
+        content: "laranja";
+        color: blue;
+    }
+}
+
+@media screen and (min-device-width: 0px) and (max-device-width: 420px) {
+    .Simples {
+        background-color: gray;
+    }
+
+    h2::before {
+        content: "cinza";
+        color: yellow;
+    }
+}
