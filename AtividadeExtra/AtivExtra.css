@@ -1,0 +1,37 @@
+/* as cores foram colocadas em unidade
+/*  diferentes propositadamente */
+body {
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmR3ZWUwYjU4OGM1OTZ6bm5wdmo5bTZtM3Z4N3JmYnVvZXk0a2J3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R98cFjunTyfpS/giphy.gif');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center; 
+    font-family: "Segoe UI Bold Italic", Tahoma;
+    margin: 0;
+    padding: 0;
+    color: yellow
+}
+
+
+
+    .botao {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0ead00;
+        color: white;
+        bottom: 0;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .botao:hover {
+        background-color: #e8e419;
+    }
+footer{
+    color:yellow;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
