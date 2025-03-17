@@ -1,24 +1,12 @@
 @keyframes fundo {
-    /*  0% { 
-        background-image: url('https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif'); 
-        background-size: cover;
-    }
-    50% { 
-        background-image: url('https://media2.giphy.com/media/Z5xk7fGO5FjjTElnpT/giphy.gif');
-        background-size:cover; 
-    }
-    100% { 
-        background-image: url('https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif'); 
-        background-size: cover;
-    }
-*/
+    
 
     0% {
         background-color: aqua;
     }
 
     25% {
-        background-color: yellow;
+        background-color: red;
     }
 
     50% {
