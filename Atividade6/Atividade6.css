@@ -1,0 +1,29 @@
+
+
+@keyframes movimento{
+    0%{
+        left:0px; top:0px;transform:rotate(0deg);
+    }
+    25%{
+        left:1000px; top:0px;transform:rotate(180deg);;
+    }
+    50%{
+        left:1000px; top:300px;transform:rotate(360deg);
+    }
+    75%{
+        left:0px; top:300px;transform:rotate(180deg);
+    }
+    100%{
+        left:0px; top:0px;transform:rotate(0deg);
+    }
+}
+
+body{
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    position: absolute; /* Faz com que a imagem se mova em relação ao seu contêiner */
+    animation: movimento 15s ease-in-out infinite;
+}
