@@ -1,0 +1,31 @@
+<!-- MVP -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Abra a janela</title>
+</head>
+<body>
+    <h1 id="TITULO">Janela Fechada</h1>
+    <img src="Janela Fechada.jfif" onmouseover="over(this)" onclick="quebrar(this)" onmouseout="fechar(this)"> 
+<script>
+    function over(obj){
+        obj.src= "Janela Aberta.jfif";
+        document.getElementById("TITULO").innerText = "Janela Aberta";
+    }
+    function quebrar(obj){
+        obj.src= "Janela quebrada.jpg";
+        document.getElementById("TITULO").innerText = "Janela Quebrada. Agora, não tem mais volta";
+        obj.onmouseover = null;
+        obj.onmouseout = null;
+    }
+    function fechar(obj){
+        obj.src= "Janela Fechada.jfif"
+        document.getElementById("TITULO").innerText = "Janela Fechada";
+     }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- MVP -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Atividade14</title>
+</head>
+
+<body>
+
+<input type="text" id="texto">
+
+<input type="radio" id="button1" name="case" onclick="aumentar(this)">
+<label for="button1">Letra maiúscula</label><br>
+
+<input type="radio" id="button2" name="case" onclick="diminuir(this)">
+<label for="button2">Letra minuscula</label><br>
+
+    <script>
+        function aumentar(obj){
+            document.getElementById("texto").value = document.getElementById("texto").value.toLocaleUpperCase();
+        }
+        function diminuir(obj){
+            document.getElementById("texto").value = document.getElementById("texto").value.toLocaleLowerCase();
+
+        }
+
+
+    </script>
+</body>
