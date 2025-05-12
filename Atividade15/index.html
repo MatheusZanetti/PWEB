@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#FF0000">
+    <link rel="stylesheet" href="Style.css">
+    <title>ATV15</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário Principal</h1>
+        <form onsubmit="validarDate()">
+            <label for="nome">Nome:</label>
+            <input minlength="10" type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="comentario">Comentário:</label>
+            <textarea minlength="20" id="comentario" name="comentario"></textarea>
+
+            <div class="pesquisa">
+                <b>Pesquisa:</b>
+                <i>Primeira vez nesta página?</i><br>
+                <input type="radio" id="sim" name="primeira_vez" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="primeira_vez" value="nao">
+                <label for="nao">Não</label>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <script src="Atividade15.js"></script>
+</body>
+</html>
