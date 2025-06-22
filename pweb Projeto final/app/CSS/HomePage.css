@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#imgPreview {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #1c1c1c;
+  color: white;
+  min-height: 100vh;
+}
+
+aside {
+  width: 250px;
+  background-color: #3f0071;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+aside img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+aside p {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+aside nav a {
+  display: block;
+  margin: 1rem 0;
+  color: #ffff66;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #2b2b2b;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+section.filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 2rem;
+}
+
+article.filme {
+  text-align: center;
+}
+
+article.filme img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+article.filme img:hover {
+  transform: scale(1.05);
+}
+
+article.filme h2 {
+  color: #ffff66;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}

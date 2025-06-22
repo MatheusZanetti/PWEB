@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2b2b2b;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+/* Header */
+header {
+  background-color: #3f0071;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Detalhes */
+main {
+  padding: 2rem;
+}
+
+.detalhes-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffff66;
+}
+
+.estrelas {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+/* Conteúdo */
+.conteudo-filme {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas:
+    "fig info"
+    "fig textos";
+  gap: 2rem;
+}
+
+figure {
+  grid-area: fig;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: #ffff66;
+  font-weight: bold;
+}
+
+.info {
+  grid-area: info;
+  color: #ffff66;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.textos {
+  grid-area: textos;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+article {
+  background-color: #ddd;
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+article h2 {
+  margin-bottom: 0.5rem;
+  color: #2b2b2b;
+}
+
+/* Botões */
+.botoes {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.editar {
+  background-color: #2b2b2b;
+  color: white;
+  border: 2px solid #c59eff;
+}
+
+.excluir {
+  background-color: red;
+  color: white;
+}

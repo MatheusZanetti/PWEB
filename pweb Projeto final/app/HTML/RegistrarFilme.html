@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Filme - CineVisto</title>
+  <link rel="stylesheet" href="../CSS/Registrar_Filme.css" />
+</head>
+<body>
+
+  <header>
+    <img src="../Imagens/Logo.png" alt="Logo CineVisto" class="logo">
+    <p class="id">ID: <a href="#">#0000001</a> Publicado no dia 20/02/2020</p>
+  </header>
+
+  <main>
+    <form class="form-filme" id="FilmeForms">
+
+      <div class="notas">★★★★★</div>
+
+      <section class="esquerda">
+        <h1>Insira a imagem do filme</h1> <input type="file" id="imagemFile"> <img src="" alt="Preview" id="imgPreview">
+
+        <input type="text" name="titulo" placeholder="Título do filme" required id="titulo">
+
+        <label>Lançamento:
+          <input type="date" name="lancamento" required id="lancamento">
+        </label>
+
+        <label>Duração:
+          <input type="text" name="duracao" placeholder="Ex: 103 min" required id = "duracao">
+        </label>
+
+        <label>Classificação:
+          <input type="text" name="classificacao" placeholder="Ex: 12 anos" required id="classificacao">
+        </label>
+
+        <label>Diretor:
+          <input type="text" name="diretor" required id="diretor">
+        </label>
+
+        <label>Elenco:
+          <textarea name="elenco" rows="3" placeholder="Ex: Jim Carrey, Laura Linney, Ed Harris" required id="elenco"></textarea>
+        </label>
+      </section>
+
+      <section class="direita">
+        <label>Sinopse</label>
+        <textarea name="sinopse" rows="5" required id="sinopse"></textarea>
+
+        <label>Opinião</label>
+        <textarea name="opiniao" rows="5" required id="opiniao"></textarea>
+      </section>
+
+      <div class="botoes">
+        <button type="button" class="cancelar" id="cancelar">Cancelar</button>
+        <button type="submit" class="salvar" id="salvar">Salvar</button>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

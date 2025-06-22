@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2b2b2b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3f0071;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: #ffff66;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.ativo {
+  text-shadow: 0 0 5px #ffff66;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro h1 span {
+  color: #ffff66;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.botao {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.entrar {
+  background-color: #6f2bff;
+  color: white;
+}
+
+.entrar:hover {
+  background-color: #5a22cc;
+}
+
+.cadastrar {
+  background-color: #00cc66;
+  color: white;
+}
+
+.cadastrar:hover {
+  background-color: #00994d;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
