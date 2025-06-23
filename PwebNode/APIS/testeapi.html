@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8">
+   <title>Adicionar Tarefa</title>
+</head>
+ 
+<body>
+   <h1>Adicionar Tarefa</h1>
+   <form id="tarefa-form">
+       <label for="tarefa">Tarefa:</label>
+       <input type="text" id="tarefa" name="tarefa" placeholder="Digite uma tarefa" required>
+       <button type="submit">Adicionar</button>
+   </form>
+ 
+   <script>
+//Aguarda a página estar carregada para executar o código.
+       document.addEventListener('DOMContentLoaded', function () {
+ 
+//Seleciona o formulário e define o endpoint da API que receberá as tarefas.
+           const form = document.getElementById('tarefa-form');
+           const endpoint = 'http://localhost:3000/tarefas';
+//Quando o formulário é enviado, cancela o comportamento padrão (recarregar a página)
+           form.addEventListener('submit', function (e) {
+               e.preventDefault();
+//Pega o valor digitado pelo usuário.
+               const tarefaInput = document.getElementById('tarefa');
+               const enviaTarefa = tarefaInput.value;
+ 
+// Realizar uma solicitação POST para a API
+//Envia a tarefa como JSON para o backend (POST /tarefas).
+               fetch(endpoint, {
+                   method: 'POST',
+                   headers: {
+                       'Content-Type': 'application/json',
+                   },
+                   body: JSON.stringify({ tarefa: enviaTarefa }),
+               })
+                   .then((response) => {
+                       if (response.ok) {
+//Mostra um alerta informando se deu certo ou não, e limpa o campo se tiver sucesso.
+                           alert('Tarefa adicionada com sucesso!');
+                           tarefaInput.value = '';
+                       } else {
+                           alert('Erro ao adicionar a tarefa.');
+                       }
+                   })
+                   .catch((error) => {
+                       console.error('Erro:', error);
+                       alert('Erro ao adicionar a tarefa.');
+                   });
+           });
+       });
+   </script>
+</body>
+ 
+</html>

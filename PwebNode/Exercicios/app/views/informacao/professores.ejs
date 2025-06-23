@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores da Fatec Sorocaba</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #FFF5DE;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #750E49;
+    }
+
+    strong {
+      color: #4D002B;
+    }
+
+    table#tabela1 {
+      margin: 0 auto;
+      border-collapse: collapse; /*remove espacamento padrao entre as celulas*/
+    }
+    table#tabela1 th,
+    table#tabela1 td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    table#tabela1 tr td {
+      background: #ffc;
+    }
+    table#tabela1 tr.cabeca td {
+      background: #eee;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Professores da Fatec Sorocaba</h1>
+    
+    <table ID="tabela1">
+      <tr class="cabeca">
+        <td>Nome</td>
+        <td>E-mail</td>
+      </tr>
+      <% console.log('QUANTIDADE DE REGISTROS:' + profs.length);%>
+      <% for(let i=0; i < profs.length; i++) {%>
+      <tr>
+        <td><%=profs[i].NOME_PROFESSOR %></td>
+        <td><%=profs[i].EMAIL_PROFESSOR %></td>
+      </tr>
+      <%}%>
+    </table>
+</body>
+</html>
